@@ -1,0 +1,40 @@
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.log-nav{
+    max-width: 250px;
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content-link > .link_people{
+    text-decoration: none;
+    padding: .3rem;
+    color: rgb(72, 0, 72);
+}
+.container .content-link > .link_sng{
+    color: rgb(0, 214, 97);
+    border: none;
+}
+.container .content-link > .link_sng:hover{
+    background-color:  rgb(72, 0, 72);
+    color: #fff;
+}
+
+.container .sb_contain{
+    max-width: 60%;
+    padding: 1rem;
+}
+.container .sb_contain > .title{
+    font-size: 3rem;
+    color:  rgb(72, 0, 72);
+    font-weight: 700;
+}
+    
