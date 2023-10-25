@@ -3,15 +3,16 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .log-nav{
-    max-width: 250px;
+    max-width: 150px;
 }
-
-.container{
+/*BANNER*/
+.container, .containerbn{
     max-width: 1440px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .container .content-link > .link_people{
@@ -21,20 +22,60 @@
 }
 .container .content-link > .link_sng{
     color: rgb(0, 214, 97);
-    border: none;
+    border: solid 1px rgb(0, 214, 97);
+    padding: 1rem;
 }
 .container .content-link > .link_sng:hover{
     background-color:  rgb(72, 0, 72);
     color: #fff;
+    border: rgb(72, 0, 72);
 }
 
-.container .sb_contain{
-    max-width: 60%;
-    padding: 1rem;
+.containerbn .sb_contain{
+    max-width: 50%;
 }
-.container .sb_contain > .title{
-    font-size: 3rem;
+
+.containerbn .sb_contain > .title{
+    font-size: 4rem;
     color:  rgb(72, 0, 72);
     font-weight: 700;
 }
-    
+.containerbn .ri_contain{
+    max-width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.containerbn .ri_contain > .bn_img{
+    max-width: 100%;
+}
+.containerbn .sb_contain > .link_sng{
+    color: rgb(0, 214, 97);
+    border: solid 1px rgb(0, 214, 97);
+    padding: 1rem;
+    margin-top: 10px;
+}
+.containerbn .sb_contain > .link_sng:hover{
+    background-color:  rgb(72, 0, 72);
+    color: #fff;
+    border: rgb(72, 0, 72);
+}
+
+/*SLIDER*/
+.slider{
+    margin-top: 8rem;
+}
+
+@media (max-width:1200px) {
+    .containerbn{
+        flex-direction: column;
+    }
+    .containerbn .sb_contain,
+    .containerbn .ri_contain{
+        max-width: 90%;
+    }
+    .containerbn .sb_contain > .link_sng{
+        margin-bottom: 10px;
+        min-width: 80px;
+    }
+}
